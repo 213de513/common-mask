@@ -1,0 +1,31 @@
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .3s;
+}
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+}
+.common-mask {
+  position: fixed;
+  z-index: 998;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  &.dark {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: rgba(255, 255, 255, 0.6);
+  }
+  &.light {
+    background-color: rgba(255, 255, 255, 0.6);
+    color: rgba(0, 0, 0, 0.6);
+  }
+  font-size: 30px;
+  text-align: center;
+  line-height: 300px;
+  .loading {
+    margin-right: 20px;
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+  }
+}
